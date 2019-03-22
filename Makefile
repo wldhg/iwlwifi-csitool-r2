@@ -1547,17 +1547,17 @@ build_csitool:
 
 install_csitool:
 	$(Q)sudo $(MAKE) ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j$J modules_install
-	@cat arch/arm/boot/zImage arch/arm/boot/dts/mt7623n-bananapi-bpi-r2.dtb > arch/arm/boot/zImage-dtb
-	if [[ -e /boot/bananapi/bpi-r2/linux ]];then
-		if [[ -e /boot/bananapi/bpi-r2/linux/uImage-csitool ]];then
-			@echo "Renamed original uImage-csitool to uImage-csitool.bak"
-			sudo cp /boot/bananapi/bpi-r2/linux/uImage-csitool /boot/bananapi/bpi-r2/linux/uImage-csitool.bak
-		fi
-		sudo cp ./uImage /boot/bananapi/bpi-r2/linux/uImage-csitool
-		@echo "Installation completed. Please edit /boot/bananapi/bpi-r2/linux/uEnv.txt to use new uImage."
-	else
-		@echo "/boot not found. Mount it first."
-	fi	
+	@cat arch/arm/boot/zImage arch/arm/boot/dts/mt7623n-bpi-r2.dtb > arch/arm/boot/zImage-dtb
+	if [ ! -e /boot/bananapi/bpi-r2/linux ]; then \
+		echo "/boot not found. Mount it first, please."; \
+		exit 2; \
+	fi
+	if [ -e /boot/bananapi/bpi-r2/linux/uImage-csitool ]; then \
+		@echo "Renamed original uImage-csitool to uImage-csitool.bak"; \
+		sudo cp /boot/bananapi/bpi-r2/linux/uImage-csitool /boot/bananapi/bpi-r2/linux/uImage-csitool.bak; \
+	fi
+	sudo cp ./uImage /boot/bananapi/bpi-r2/linux/uImage-csitool
+	@echo "Installation completed. Please edit /boot/bananapi/bpi-r2/linux/uEnv.txt to use new uImage."
 
 # Clear a bunch of variables before executing the submake
 tools/: FORCE
