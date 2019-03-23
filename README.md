@@ -8,7 +8,7 @@ This is linux **4.4** kernel source for Banana Pi R2 (BPI-R2) which [sigcomm2010
 4. `cd BPI-R2-CSITool; ./make build_csitool`  
 5. `sudo mount /dev/mmcblk0p1 /boot`  
 6. `./make install_csitool`  
-7. Edit `/boot/bananapi/bpi-r2/linux/uEnv.txt` and change `uImage` to `uImage-csitool`.  
+7. Edit `/boot/bananapi/bpi-r2/linux/uEnv.txt` and change `kernel=uImage` to `kernel=uImage-csitool`.  
 8. Reboot your BPI-R2.  
 9. Do `dmesg | grep iwl` and check the result.  
 
