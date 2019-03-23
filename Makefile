@@ -1553,7 +1553,7 @@ install_csitool:
 		exit 2; \
 	fi
 	if [ -e /boot/bananapi/bpi-r2/linux/uImage-csitool ]; then \
-		@echo "Renamed original uImage-csitool to uImage-csitool.bak"; \
+		echo "Renamed original uImage-csitool to uImage-csitool.bak"; \
 		sudo cp /boot/bananapi/bpi-r2/linux/uImage-csitool /boot/bananapi/bpi-r2/linux/uImage-csitool.bak; \
 	fi
 	sudo cp ./uImage /boot/bananapi/bpi-r2/linux/uImage-csitool
