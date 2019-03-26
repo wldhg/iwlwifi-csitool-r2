@@ -1,5 +1,6 @@
 # BPI-R2 CSITool Kernel
-This is linux **4.4** kernel source for Banana Pi R2 (BPI-R2) which [sigcomm2010 CSI tool](https://github.com/dhalperi/linux-80211n-csitool)'s driver modification is included.  
+This is linux **4.4** kernel source for Banana Pi R2 (BPI-R2) which [sigcomm2010 CSI tool](https://github.com/dhalperi/linux-80211n-csitool)'s driver modification and my own configuration (for make CSITool working) is included.  
+The kernel source is based on [frank-w's kernel](https://github.com/frank-w/BPI-R2-4.4/).  
 
 ## How to build and install it
 1. First, install [this image](https://drive.google.com/file/d/1Ze_YGDT3B1-P57wPcm3gcVFcCMfBLspL/view?usp=sharing) on your sd card.  
