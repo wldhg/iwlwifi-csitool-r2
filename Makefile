@@ -1543,7 +1543,7 @@ J=$(shell expr `grep ^processor /proc/cpuinfo  | wc -l` \* 2)
 build_csitool:
 	$(Q)$(MAKE) ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j$J UIMAGE_LOADADDR=0x80008000 uImage dtbs
 	$(Q)$(MAKE) ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j$J modules
-	@mkimage -A arm -O linux -T kernel -C none -a 80008000 -e 80008000 -n "CSITOOL" -d arch/arm/boot/zImage-dtb ./uImage
+	@mkimage -A arm -O linux -T kernel -C none -a 80008000 -e 80008000 -n "BPI-R2 CSITool" -d arch/arm/boot/zImage-dtb ./uImage
 
 install_csitool:
 	$(Q)sudo $(MAKE) ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j$J modules_install
