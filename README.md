@@ -15,7 +15,7 @@ The kernel source is based on [frank-w's kernel](https://github.com/frank-w/BPI-
 9. Do `dmesg | grep iwl` and check the result. If there is a message which says `connector callback registered`, this means that your installation of BPI-R2 CSITool-enabled kernel is successful.  
 
 ## How to use CSITool
-Please look [README for Data Acquirer](https://github.com/widh/BPI-R2-CSITool-DataAcquirer#readme).  
+Please look [README for Data Collector](https://github.com/widh/BPI-R2-CSITool-DataCollector#readme).  
 
 ## LICENSE
 Linux is under GPL-2.0 and CSI tool is under MIT license.
