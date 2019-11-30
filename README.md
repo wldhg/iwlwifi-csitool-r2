@@ -17,5 +17,9 @@ The kernel source is based on [frank-w's kernel](https://github.com/frank-w/BPI-
 ## How to use CSITool
 Please look [README for Data Collector](https://github.com/wldh-g/BPI-R2-CSITool-DataCollector#readme).  
 
+## Disclaimer
+The poweroff driver is not included in this version. In BPI-R2 kernel development, that feature is supported from 4.14 kernel, implemented by *frank-w*. But Intel Wi-Fi firmware version 2, which CSITool uses, is not supported in 4.14 kernel.  
+I'm now trying to patch poweroff driver to 4.4 kernel. **For now, you have to check it's power is off by looking wire-connected display before unplug the power cable.**
+
 ## LICENSE
 Linux is under GPL-2.0 and CSI tool is under MIT license.
