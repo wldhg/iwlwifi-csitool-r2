@@ -4,7 +4,10 @@ My own configuration is also added for CSITool working properly.
 The kernel source is based on [frank-w's kernel](https://github.com/frank-w/BPI-R2-4.4/).  
 
 ## How to build and install it
-1. First, install [this image](https://drive.google.com/file/d/1Ze_YGDT3B1-P57wPcm3gcVFcCMfBLspL/view?usp=sharing) on your sd card.  
+You can follow method A or B.
+
+#### A - Build yourself
+1. First, install [this image](https://drive.google.com/file/d/1Ze_YGDT3B1-P57wPcm3gcVFcCMfBLspL/view?usp=sharing) on your sdcard.  
 2. Resize `/dev/mmcblk0p2` partition to the end of your sdcard  
 3. `git clone https://github.com/wldh-g/BPI-R2-CSITool-Kernel`  
 4. `cd BPI-R2-CSITool-Kernel; ./make build_csitool`  
@@ -13,6 +16,12 @@ The kernel source is based on [frank-w's kernel](https://github.com/frank-w/BPI-
 7. Edit `/boot/bananapi/bpi-r2/linux/uEnv.txt` and change `kernel=uImage` to `kernel=uImage-csitool`.  
 8. Reboot your BPI-R2.  
 9. Do `dmesg | grep iwl` and check the result. If there is a message which says `connector callback registered`, this means that your installation of BPI-R2 CSITool-enabled kernel is successful.  
+
+#### B - Use sdcard image file
+1. Install [this image](https://wldh-my.sharepoint.com/:u:/g/personal/jio_wldh_org/EfS8LN5UVdFCoTH8VbQT6VMBnFuBnSPWrVHmBRgHLe1E0g?e=Jq9KqD) on your sdcard. This image is a result of `dd` of 64GB sdcard.
+2. Put the sdcard to BPI-R2 and power on.
+3. Log in to the linux with ID `i` and password `me`.
+3. Do `dmesg | grep iwl` and check the result. If there is a message which says `connector callback registered`, this means that your installation of BPI-R2 CSITool-enabled kernel is successful.  
 
 ## How to use CSITool
 Please look [README for Data Collector](https://github.com/wldh-g/BPI-R2-CSITool-DataCollector#readme).  
