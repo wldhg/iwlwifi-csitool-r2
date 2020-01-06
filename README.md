@@ -10,7 +10,7 @@ You can follow method A or B.
 1. First, install [this image](https://drive.google.com/file/d/1Ze_YGDT3B1-P57wPcm3gcVFcCMfBLspL/view?usp=sharing) on your sdcard.  
 2. Resize `/dev/mmcblk0p2` partition to the end of your sdcard  
 3. `git clone https://github.com/wldh-g/BPI-R2-CSITool-Kernel`  
-4. `cd BPI-R2-CSITool-Kernel; ./make build_csitool`  
+4. `cd BPI-R2-CSITool-Kernel; make build_csitool`  
 5. `sudo mount /dev/mmcblk0p1 /boot`  
 6. `./make install_csitool`  
 7. Edit `/boot/bananapi/bpi-r2/linux/uEnv.txt` and change `kernel=uImage` to `kernel=uImage-csitool`.  
