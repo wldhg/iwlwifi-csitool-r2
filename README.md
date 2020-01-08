@@ -1,4 +1,4 @@
-# BPI-R2 CSITool Kernel
+# BPI-R2 Intel CSITool Kernel
 This is a Linux **4.4** kernel source for Banana Pi R2 (BPI-R2) which includes [sigcomm2010 CSI tool](https://github.com/dhalperi/linux-80211n-csitool).  
 
 The kernel source is based on [frank-w's kernel](https://github.com/frank-w/BPI-R2-4.4/).  
@@ -18,7 +18,7 @@ You can follow the method A or B.
 3. `git clone https://github.com/wldh-g/BPI-R2-Intel-CSITool-Kernel`  
 4. `cd BPI-R2-Intel-CSITool-Kernel; make build_csitool`  
 5. `sudo mount /dev/mmcblk0p1 /boot`  
-6. `./make install_csitool`  
+6. `make install_csitool`  
 7. Edit `/boot/bananapi/bpi-r2/linux/uEnv.txt` and change `kernel=uImage` to `kernel=uImage-csitool`.  
 8. Reboot your BPI-R2.  
 9. Do `dmesg | grep iwl` and check the result. If there is a message which says `connector callback registered`, this means that your installation of BPI-R2 CSITool-enabled kernel is successful.  
