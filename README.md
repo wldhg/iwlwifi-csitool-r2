@@ -7,7 +7,7 @@ The kernel source is based on [frank-w's kernel](https://github.com/frank-w/BPI-
 You can follow the method A, B or C.
 
 ##### A - Use image file (Recommended)
-1. Install [this image](https://go.wldh.org/r2-intel-img) on your sdcard. This image is a result of `dd` of 64GB sdcard.
+1. Install [this image (7.08GB)](https://go.wldh.org/r2-intel-img) on your sdcard. This image is a result of `dd` of 64GB sdcard.
 2. Put the sdcard to BPI-R2 and power on.
 3. Log in to the linux with ID `i` and password `me`. (`hostname` is `CSI-Tool`.)
 4. Do `dmesg | grep iwl` and check the result. If there is a message which says `connector callback registered`, this means that your installation of BPI-R2 CSITool-enabled kernel is successful.  
