@@ -9,8 +9,8 @@ You can follow the method A or B.
 ##### A - Use image file (Recommended)
 1. Install [this image](https://go.wldh.org/r2-intel-img) on your sdcard. This image is a result of `dd` of 64GB sdcard.
 2. Put the sdcard to BPI-R2 and power on.
-3. Log in to the linux with ID `i` and password `me`.
-3. Do `dmesg | grep iwl` and check the result. If there is a message which says `connector callback registered`, this means that your installation of BPI-R2 CSITool-enabled kernel is successful.  
+3. Log in to the linux with ID `i` and password `me`. (`hostname` is `CSI-Tool`.)
+4. Do `dmesg | grep iwl` and check the result. If there is a message which says `connector callback registered`, this means that your installation of BPI-R2 CSITool-enabled kernel is successful.  
 
 ##### B - Build yourself
 1. First, prepare the build environment by installing [this image](https://drive.google.com/file/d/1Ze_YGDT3B1-P57wPcm3gcVFcCMfBLspL/view?usp=sharing) on your BPI-R2 sdcard.  
