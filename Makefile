@@ -1559,6 +1559,9 @@ install_csitool:
 	sudo cp ./uImage /boot/bananapi/bpi-r2/linux/uImage-csitool
 	@echo "Installation completed. Please edit /boot/bananapi/bpi-r2/linux/uEnv.txt to use new uImage."
 
+pack_csitool:
+	./pack.sh
+
 # Clear a bunch of variables before executing the submake
 tools/: FORCE
 	$(Q)mkdir -p $(objtree)/tools

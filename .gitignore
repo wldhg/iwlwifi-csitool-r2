@@ -120,3 +120,6 @@ all.config
 
 # Kdevelop4
 *.kdev4
+
+# packed
+/packed
