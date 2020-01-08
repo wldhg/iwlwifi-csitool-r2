@@ -52,6 +52,8 @@ If you already installed some linux distribution on your BPI-R2, follow **method
 - Please look at this [README for Data Collector](https://github.com/wldh-g/BPI-R2-Intel-CSITool-DataCollector#readme).  
 
 ### Disclaimer
+Linux 4.4 kernel for BPI-R2 was not fully developed yet, so some Mediatek-related features are not included in this kernel.  
+
 The poweroff driver is not included in this kernel.  
 So the power of the device will stay on even after the OS successfully shut down.
 
