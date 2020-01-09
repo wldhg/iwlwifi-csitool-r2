@@ -8,7 +8,7 @@ You can follow the method A, B, C or D.
 
 If you already installed some linux distribution on your BPI-R2, follow **method A**. If not, I recommend **method B**.
 
-##### A - Install prebuilt image
+##### A - Install prebuilt kernel
 1. Download [this file (140MB)](https://go.wldh.org/r2-intel-patch) and extract it.
 2. `sudo mount /dev/mmcblk0p1 /boot` on your R2.
 3. Copy files in `BPI-BOOT` to `/boot` in R2.
