@@ -33,7 +33,7 @@ You can follow the method A, B or C.
 
 ### How can I check the installation and use it?
 - Do `dmesg | grep iwl` and check the result. If there is a message which says `connector callback registered`, this means that your installation of BPI-R2 CSITool-enabled kernel is successful.  
-- Please look at this [README for Data Collector](https://github.com/wldh-g/BPI-R2-Intel-CSITool-DataCollector#readme).  
+- Please look at this [README of CSI Collector](https://github.com/wldh-g/BPI-R2-Intel-CSITool-App#readme).  
 
 ### Disclaimer
 The poweroff driver is not included in this kernel.  
