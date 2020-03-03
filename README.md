@@ -24,8 +24,8 @@ If you already installed some linux distribution on your BPI-R2, follow **method
 
 ##### C - Build yourself (Cross-compile)
 1. Prepare cross-compiling environment (`arm-linux-gnueabihf`).  
-2. `git clone https://github.com/wldh-g/BPI-R2-Intel-CSITool`  
-3. `cd BPI-R2-Intel-CSITool`  
+2. `git clone https://github.com/wldh-g/iwlwifi-csitool-r2`  
+3. `cd iwlwifi-csitool-r2`  
 4. (Optional) Configure the build `make menuconfig ARCH=arm`
 5. `make build_csitool ARCH=arm`
 6. `make pack_csitool ARCH=arm`
@@ -38,8 +38,8 @@ If you already installed some linux distribution on your BPI-R2, follow **method
 
 ##### D - Build yourself (On R2)
 1. Resize `/dev/mmcblk0p2` partition to the end of your sdcard.  
-2. `git clone https://github.com/wldh-g/BPI-R2-Intel-CSITool`  
-3. `cd BPI-R2-Intel-CSITool`  
+2. `git clone https://github.com/wldh-g/iwlwifi-csitool-r2`  
+3. `cd iwlwifi-csitool-r2`  
 4. (Optional) Configure the build `make menuconfig`
 5. `make build_csitool`
 6. `sudo mount /dev/mmcblk0p1 /boot`
@@ -49,7 +49,7 @@ If you already installed some linux distribution on your BPI-R2, follow **method
 
 ### How can I check the installation and use it?
 - Do `dmesg | grep iwl` and check the result. If there is a message which says `connector callback registered`, this means that your installation of BPI-R2 CSITool-enabled kernel is successful.  
-- Please look at this [README of CSI Collector](https://github.com/wldh-g/BPI-R2-Intel-CSITool-App#readme).  
+- Please look at this [README of CSI Collector](https://github.com/wldh-g/iwlwifi-csitool-apps#readme).  
 
 ### Disclaimer
 Linux 4.4 kernel for BPI-R2 was not fully developed yet, so some Mediatek-related features are not included in this kernel.  
